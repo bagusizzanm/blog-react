@@ -1,12 +1,95 @@
-# React + Vite
+<!--  -->
+# 📘 Blog Statis dengan React.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sebuah proyek **blog statis** yang dibuat dengan **React.js**, menggunakan data lokal berupa file JSON. Aplikasi ini dirancang dengan pendekatan **mobile-friendly**, mendukung **pagination**, dan layout yang fleksibel berbasis **CSS Grid** dan **Flexbox**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
 
-## Expanding the ESLint configuration
+- ✅ **Blog Statis**: Menggunakan data lokal (file `.json`) tanpa backend.
+- 📱 **Responsive Design**: Optimal untuk perangkat mobile dan desktop.
+- 📄 **Pagination**: Navigasi halaman blog yang efisien.
+- 🎨 **Grid & Flexbox**: Layout modern dan rapi.
+- 🧩 **Komponen Modular**: Dibangun dengan struktur komponen terpisah untuk skalabilitas.
+- 💬 **Komentar Statis**: Komponen komentar tersedia untuk simulasi interaksi pengguna.
+- 📙 Menggunakan arsitektur MVC (Model View Controller).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Struktur Folder
+
+```
+src/
+├── assets/                 # Gambar, ikon, dan aset statis lainnya
+├── components/             # Komponen UI dan fungsional
+│   ├── ui/                 # Komponen UI tambahan (button, input, dll)
+│   ├── Articles.jsx        # Komponen utama daftar artikel
+│   ├── Card.jsx            # Komponen kartu artikel
+│   ├── Navbar.jsx          # Navigasi utama
+│   ├── Hero.jsx            # Section pembuka blog
+│   ├── Pagination.jsx      # Komponen pagination
+│   └── Comments.jsx        # Komentar statis
+├── controller/
+│   └── useBlog.js          # Custom hook untuk pengambilan data artikel
+├── layout/
+│   ├── DetailArticle.jsx   # Halaman detail artikel
+│   ├── RightPanel.jsx      # Panel sisi kanan (artikel terbaru, dsb.)
+│   └── RootLayout.jsx      # Tata letak utama aplikasi
+├── pages/
+│   └── Index.jsx           # Halaman utama blog
+└── services/
+    └── api.js              # Modul untuk fetch data JSON lokal
+```
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/bagusizzanm/blog-react.git
+   cd blog-react
+   ```
+
+2. **Install Dependency**
+   ```bash
+   npm install
+   ```
+
+3. **Jalankan Aplikasi**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📦 Teknologi yang Digunakan
+
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/) (digunakan untuk styling)
+- [Shadcn UI](https://ui.shadcn.com/docs/installation) (digunakan untuk build component)
+- JavaScript (ES6+)
+- JSON (sebagai data sumber)
+
+---
+
+## 📌 Catatan
+
+- Proyek ini bersifat **statis** tanpa backend.
+- Data artikel diambil dari file `.json` lokal melalui custom hook pada file **controller/useBlog.js.**
+- Ideal untuk studi kasus blog sederhana atau personal portfolio blog.
+
+---
+
+## 🧑‍💻 Author
+
+**Bagus Izzan Muafy**  
+Frontend Developer | Blog Builder Enthusiast  
+[GitHub](https://github.com/bagusizzanm)
+
+---
+
+## 📄 License
+
+MIT License — free to use, modify, and distribute.

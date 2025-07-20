@@ -27,13 +27,13 @@ const RightPanel = (className) => {
         articles.map((blog) => (
           <div key={blog.id} className="max-w-md overflow-auto md:max-w-2xl">
             <div className="md:flex items-center">
-              {/* <div className="md:shrink-0">
+              <div className="md:hidden">
                 <img
-                  className="md:h-28 w-full rounded object-cover md:w-48"
+                  className="md:h-28 w-full h-[150px] rounded object-cover md:w-48"
                   src={blog.img}
-                  alt="Modern building architecture"
+                  alt="img-thumbnail"
                 />
-              </div> */}
+              </div>
               <div className="py-3">
                 <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">
                   <Link
